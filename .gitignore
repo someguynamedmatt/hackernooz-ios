@@ -1,0 +1,9 @@
+.DS_Store
+xcuserdata
+Pods/
+*.xccheckout
+*.dSYM.zip
+*.ipa
+build/
+*.cer
+*.mobileprovision
