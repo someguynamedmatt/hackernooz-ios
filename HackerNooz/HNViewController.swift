@@ -10,6 +10,7 @@ import UIKit
 
 class HNViewController: UITableViewController {
     var stories: [HNStory] = []
+    var paginatedStoryIds: [[Int]] = []
 
     override func viewDidLoad() {
         self.navigationItem.hidesBackButton = true
@@ -35,5 +36,8 @@ class HNViewController: UITableViewController {
                             willDisplay cell: UITableViewCell,
                             forRowAt indexPath: IndexPath) {
         print("INDEX PATH: " + String(indexPath[1]))
+        if indexPath[1] == 20 {
+            
+        }
     }
 }

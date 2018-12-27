@@ -19,8 +19,9 @@ class HNInitialViewController: UIViewController {
                 self.initialData = results
                 
                 var stories: [HNStory] = []
+                var paginatedStoryIds: [[Int]] = createInnerSubArrays(fromArray: results, withMaxSubSize: 20)
                 let storiesDispatch = DispatchGroup()
-                for (_, result) in results.enumerated() {
+                for (_, result) in paginatedStoryIds[0].enumerated() {
                     storiesDispatch.enter()
                     HNHttpClientService.shared.getStory(byId: result) { results, errorMessage in
                         if let results = results {
@@ -32,6 +33,8 @@ class HNInitialViewController: UIViewController {
                 
                 storiesDispatch.notify(queue: .main) {
                     vc.stories  = stories
+                    paginatedStoryIds.removeFirst() // We already used the first batch so we can remove it
+                    vc.paginatedStoryIds = paginatedStoryIds
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
