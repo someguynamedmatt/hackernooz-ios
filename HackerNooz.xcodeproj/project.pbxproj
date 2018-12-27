@@ -20,6 +20,7 @@
 		E1B2D04121CD7C6E0002A255 /* HNStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2D04021CD7C6E0002A255 /* HNStoryModel.swift */; };
 		E1B2D04321CD7D4B0002A255 /* HNCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2D04221CD7D4B0002A255 /* HNCommentModel.swift */; };
 		E1B2D04521CD7DB50002A255 /* HNUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2D04421CD7DB50002A255 /* HNUserModel.swift */; };
+		E1D3D29121D5832700C51087 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3D29021D5832700C51087 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E1B2D04021CD7C6E0002A255 /* HNStoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNStoryModel.swift; sourceTree = "<group>"; };
 		E1B2D04221CD7D4B0002A255 /* HNCommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCommentModel.swift; sourceTree = "<group>"; };
 		E1B2D04421CD7DB50002A255 /* HNUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNUserModel.swift; sourceTree = "<group>"; };
+		E1D3D29021D5832700C51087 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FB58E4C1534BCE74AF4CE31A /* Pods-HackerNooz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNooz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNooz/Pods-HackerNooz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		E19B489921CD6E7C003EBC16 /* HackerNooz */ = {
 			isa = PBXGroup;
 			children = (
+				E1D3D28F21D5830C00C51087 /* Utils */,
 				E1B2D03F21CD7BF90002A255 /* Models */,
 				E1B2D03C21CD722C0002A255 /* Services */,
 				E19B489A21CD6E7C003EBC16 /* AppDelegate.swift */,
@@ -123,6 +126,14 @@
 				E1B2D04421CD7DB50002A255 /* HNUserModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E1D3D28F21D5830C00C51087 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3D29021D5832700C51087 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 			files = (
 				E1B2D04521CD7DB50002A255 /* HNUserModel.swift in Sources */,
 				E19B489D21CD6E7C003EBC16 /* HNViewController.swift in Sources */,
+				E1D3D29121D5832700C51087 /* Utils.swift in Sources */,
 				E19C73A621CF51A800D283CA /* StoryCellView.swift in Sources */,
 				E19C73A421CE03E600D283CA /* HNInitialViewController.swift in Sources */,
 				E1B2D04121CD7C6E0002A255 /* HNStoryModel.swift in Sources */,

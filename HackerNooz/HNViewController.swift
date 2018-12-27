@@ -31,4 +31,9 @@ class HNViewController: UITableViewController {
         cell.set(story: stories[indexPath.row])
         return cell
     }
+    override func tableView(_ tableView: UITableView,
+                            willDisplay cell: UITableViewCell,
+                            forRowAt indexPath: IndexPath) {
+        print("INDEX PATH: " + String(indexPath[1]))
+    }
 }
